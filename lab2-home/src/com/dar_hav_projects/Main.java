@@ -1,46 +1,27 @@
 package com.dar_hav_projects;
 
-import com.dar_hav_projects.*;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// Creating depots, vehicles, and clients
-        Depot depot1 = new Depot("Depot 1");
-        Depot depot2 = new Depot("Depot 2");
+        Attraction museum = new Attraction("National Museum", true);
+        museum.addVisitingTime(LocalDate.of(2024, 3, 22), LocalTime.of(9, 0), LocalTime.of(17, 0));
 
-        Truck truck1 = new Truck("Truck 1", 1);
-        Truck truck2 = new Truck("Truck 2", 2);
-        Drone drone1 = new Drone("Drone 1", 120);
-        Drone drone2 = new Drone("Drone 2", 180);
-        Drone drone3 = new Drone("Drone 2", 180);
+        Attraction park = new Attraction("Central Park", false);
+        park.addVisitingTime(LocalDate.of(2024, 3, 22), LocalTime.of(7, 0), LocalTime.of(22, 0));
 
-        Client client1 = new Client("Client 1", ClientType.REGULAR);
-        Client client2 = new Client("Client 2", ClientType.PREMIUM);
-        Client client3 = new Client("Client 3", ClientType.REGULAR);
+        Trip trip = new Trip();
+        trip.addAttraction(museum);
+        trip.addAttraction(park);
 
-        // Creating a problem instance
-        Problem problem = new Problem();
+        trip.displayVisitableNotPayable();
 
-        // Adding depots, vehicles, and clients to the problem
-        problem.addDepot(depot1);
-        problem.addDepot(depot2);
-        problem.addVehicle(truck1);
-        problem.addVehicle(truck2);
-        problem.addVehicle(drone1);
-        problem.addVehicle(drone2);
-        problem.addClient(client1);
-        problem.addClient(client2);
-        problem.addClient(client3);
+        TravelPlan travelPlan = new TravelPlan();
+        travelPlan.addVisit(LocalDate.of(2024, 3, 22), museum);
+        travelPlan.addVisit(LocalDate.of(2024, 3, 23), park);
 
-        // Retrieving all vehicles
-        Vehicle[] allVehicles = problem.getVehicles();
-        System.out.println("All vehicles:");
-        for (Vehicle vehicle : allVehicles) {
-            System.out.println(vehicle.getId());
-        }
-        
-        problem.allocateClients();
-	}
-
+        travelPlan.printPlan();
+    }
 }
