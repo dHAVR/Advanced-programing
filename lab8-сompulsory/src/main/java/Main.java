@@ -6,9 +6,8 @@ public class Main {
         Connection connection = DatabaseConnection.getConnection();
         if (connection != null) {
             System.out.println("Connection established successfully!");
-            // Теперь вы можете использовать 'connection' для выполнения запросов к базе данных
             try {
-                connection.close(); // После использования соединения, не забудьте закрыть его
+                connection.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }

@@ -10,15 +10,17 @@ public class AuthorDAO {
         this.connection = DatabaseConnection.getConnection();
     }
 
-    public void addAuthor(String name) {
-        String query = "INSERT INTO authors (name) VALUES (?)";
+    public void addAuthor(int id, String name, String origin_country, int age) {
+        String query = "INSERT INTO authors (id, name, origin_country, age) VALUES (?, ?, ?, ?)";
+
         try (PreparedStatement statement = connection.prepareStatement(query)) {
-            statement.setString(1, name);
+            statement.setInt(1, id);
+            statement.setString(2, name);
+            statement.setString(3, origin_country);
+            statement.setInt(4, age);
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-
-    // Add other CRUD operations as needed
 }
