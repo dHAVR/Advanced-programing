@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-05-13T13:39:59.564515100Z</date>
+  <millis>1715607599564</millis>
+  <nanos>515100</nanos>
+  <sequence>0</sequence>
+  <logger>com.example.lab9compulsory.LogHelper</logger>
+  <level>INFO</level>
+  <class>com.example.lab9compulsory.LogHelper</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Successfully found book: </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-05-16T16:53:05.922879600Z</date>
+  <millis>1715878385922</millis>
+  <nanos>879600</nanos>
+  <sequence>0</sequence>
+  <logger>com.example.lab9compulsory.LogHelper</logger>
+  <level>INFO</level>
+  <class>com.example.lab9compulsory.LogHelper</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Successfully found book: </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-05-16T17:01:24.398922200Z</date>
+  <millis>1715878884398</millis>
+  <nanos>922200</nanos>
+  <sequence>0</sequence>
+  <logger>com.example.lab9compulsory.LogHelper</logger>
+  <level>INFO</level>
+  <class>com.example.lab9compulsory.LogHelper</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Successfully found book: </message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-05-16T17:10:17.529055200Z</date>
+  <millis>1715879417529</millis>
+  <nanos>55200</nanos>
+  <sequence>0</sequence>
+  <logger>com.example.lab9compulsory.LogHelper</logger>
+  <level>INFO</level>
+  <class>com.example.lab9compulsory.LogHelper</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Successfully found book: </message>
+</record>
+</log>
